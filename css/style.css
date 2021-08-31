@@ -1,10 +1,16 @@
 body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
-  background-color: hsl(225, 100%, 94%);
 }
 
-body::before {
+.container {
+  max-width: 1440px;
+  margin: auto;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+
+.container::before {
   content: '';
   background-image: url('../images/pattern-background-mobile.svg');
   background-position: center;
@@ -13,7 +19,6 @@ body::before {
   top: 0;
   height: 194px;
   display: block;
-  z-index: -1;
   width: 100%;
 }
 
@@ -38,7 +43,7 @@ body::before {
 }
 
 @media (min-width: 376px) {
-  body::before {
+  .container::before {
     background-image: url('../images/pattern-background-desktop.svg');
     height: 437px;
   }
