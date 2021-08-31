@@ -29,8 +29,14 @@ body {
 .text-blue {
   color: hsl(245, 75%, 52%);
 }
+.text-blue:hover {
+  color: hsl(244, 83%, 68%);
+}
 .bg-blue {
   background-color: hsl(245, 75%, 52%);
+}
+.bg-blue:hover {
+  background-color: hsl(244, 83%, 68%);
 }
 .text-title {
   color: hsl(223, 47%, 23%);
