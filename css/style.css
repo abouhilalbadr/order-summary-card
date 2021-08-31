@@ -1,0 +1,63 @@
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-color: hsl(225, 100%, 94%);
+}
+
+body::before {
+  content: '';
+  background-image: url('../images/pattern-background-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  height: 194px;
+  display: block;
+  z-index: -1;
+  width: 100%;
+}
+
+.card {
+  width: 350px;
+}
+
+.text-blue {
+  color: hsl(245, 75%, 52%);
+}
+.bg-blue {
+  background-color: hsl(245, 75%, 52%);
+}
+.text-title {
+  color: hsl(223, 47%, 23%);
+}
+.text-gray {
+  color: hsl(223deg 3% 61%);
+}
+.bg-plan {
+  background-color: hsl(225, 100%, 98%);
+}
+
+@media (min-width: 376px) {
+  body::before {
+    background-image: url('../images/pattern-background-desktop.svg');
+    height: 437px;
+  }
+  .card {
+    width: 400px;
+  }
+}
+
+/*
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+*/
